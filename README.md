@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+To start the project
+npm i 
+npm start 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The approach
 
-## Available Scripts
 
-In the project directory, you can run:
+1) Centralized State Management:
+  a) Context API with Providers: Used to manage a centralized state that tracks columns and cards across the board.
+  b) Dynamic Updates: When cards are moved or reordered, the state reflects these changes immediately. This setup allows easy adaptation to future requirements, like adding card statuses.
+  
+2) Drag-and-Drop Functionality:
+  a) React-Beautiful-DnD: This library provides drag-and-drop interactions for both cards and columns, delivering seamless user experience with real-time visual cues for drag and drop states.
 
-### `npm start`
+3) Card Operations:
+  a)Add and Move: New cards start in the "To-Do" column and can be moved to any other column, adapting their placement accordingly.
+  
+4) Column Management:
+  a) Order and Flexibility: Columns are reorderable and can contain multiple cards. Two default columns ("To-Do" and "Done") are provided, with the option to add more as needed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Notes:
+  a) Column deletion is not implemented but can be added similarly to card deletion.
+  b) card doesnot have its own status, more information can be added if required. In the current solution this is drived from column.
+  
