@@ -1,0 +1,23 @@
+.board {
+    display: flex;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+
+.board.dragging-over{
+      border-color: green;
+    background-color: #C1E1C1;
+}
+
+
+.app-actions{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.app-heading{
+    text-align: center;
+}

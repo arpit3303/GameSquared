@@ -1,0 +1,52 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.card-input {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+
+}
+
+.card-input input {
+    height: 28px;
+}
+
+.card.dragging {
+    border: 1px solid green;
+    box-shadow: 2px 2px #C1E1C1;
+
+}
+
+.card .card-actions{
+    display: none;
+}
+
+.card:hover .card-actions{
+
+    display: flex;
+    gap: 4px;
+
+
+
+}
+
+
+.card-actions .card-action {
+    padding: 4px;
+}
+
+
+
+

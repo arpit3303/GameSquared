@@ -1,0 +1,43 @@
+.column {
+    width: 300px;
+    margin: 0 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+    justify-content: center;
+}
+
+.column-heading {
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    z-index: 100;
+    margin: 0 -20px;
+    padding: 20px;
+}
+
+
+.column.dragging-over {
+    border-color: green;
+    background-color: #C1E1C1;
+}
+
+
+.column.dragging-over .drop-text {
+display: inline-block;
+color: green;
+margin: auto;
+
+}
+
+
+
+
+.column .drop-text {
+    display: none;
+}
